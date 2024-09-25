@@ -15,21 +15,20 @@ body {
 footer {text-align: center; background-color: rgb(0, 0, 0); height: 50px; color: #fff;}
 header {align-items: flex-start; padding: 15px; background-color: black;}
 
-nav {border-bottom: 1px;}
-nav ul li {display: flex;}
-nav ul li {padding: 5px; background-color: rgb(255, 255, 255); color: black; display: block; text-decoration: none;}
-.logo {width: 250px;} 
+
+.mostrar {display:block}
+nav {display: none; overflow: hidden;}
+nav ul li {background-color:#ffffff; border: 1cap solid #000000; text-decoration: none; padding: 5px; display: block; text-align: center;}
+.logo {width: 200px;}
 img {width: 200px;}
 .imagenmodelo {width: 50%;}
-.FotoBanner2 {width: 100%; }
+.FotoBanner2 {width: 100%;}
 
 .FotoPrendaJeans {width: 200px; }
 .FotoPrendaCampera {width: 200px;}
 .FotoPrendaPollera {width: 200px;}
 
-.cajacontenedora {display: block;}
-.caja1 {width: 13%; border: 1px solid; text-align: center;}
-.caja2 {width: 13%}
+.cajacontenedora {display: flex; flex-flow: wrap; justify-content: space-around; padding: 20px;}
 
 h1 {text-align:center; background-color: rgb(216, 216, 216); color:#252525; font-size: 300%; margin-top: 1%;}
 p {font-size: 10px; margin-top: 10px;}
@@ -40,8 +39,5 @@ nav ul li a { color:#050000; border: 1px solid #fff; text-decoration: none; padd
   nav {display:block}
 }
 
-@media (max-width: 768px) { }
 
-@media (max-width: 480px) {}
-
-.barra { display: none; margin-top: -43px; color: rgb(53, 204, 241);}
+.icono { font-size: 30px; color:#ffffff; position:absolute; right: 10px; }
