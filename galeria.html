@@ -19,7 +19,8 @@
       <a href="index.html"><img src="logodoff.jpeg " class="logo">
         <nav id="navegador" class="">
           <ul> 
-          <li> <a href=> Catalogo</a></li>
+
+          <li> <a href="galeria.html">Catálogo</a></li>
           <li><a href="contacto.html">Contacto</a></li>
           </ul>
        </nav>
@@ -44,6 +45,17 @@
               <p> Para completar tu outfit, tenemos camperas.</p>
             </div>
           </div>
+
+          <div class="slider-container">
+            <div class="slides">
+                <div class="slide"><img src="Imagen1.jpg" alt="Imagen 1"></div>
+                <div class="slide"><img src="Imagen2.jpg" alt="Imagen 2"></div>
+                <div class="slide"><img src="Imagen3.jpg" alt="Imagen 3"></div>
+                <div class="slide"><img src="Imagen4.jpg" alt="Imagen 4"></div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+     </div>
         </main>
 
         <footer>
@@ -61,6 +73,36 @@
              x.className = " ";
            }
          }
-      </script>   
- 
+      </script>  
+     <script>
+     let slideIndex = 0;
+  
+      function showSlide(index) {
+          const slides = document.querySelector('.slides');
+          const totalSlides = document.querySelectorAll('.slide').length;
+          
+          if (index >= totalSlides) {
+              slideIndex = 0;
+          } else if (index < 0) {
+              slideIndex = totalSlides - 1;
+          } else {
+              slideIndex = index;
+          }    
+          slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+      }
+      function nextSlide() {
+        showSlide(currentSlide + 1);
+      }
+       
+      function prevSlide() {
+        showSlide(currentSlide - 1);
+      }  
+      function moveSlide(step) {
+          showSlide(slideIndex + step);
+      }
+        
+      // Initialize slider
+      showSlide(slideIndex); 
+    </script>
+
 </html>

@@ -18,7 +18,7 @@ header {align-items: flex-start; padding: 15px; background-color: black;}
 
 .mostrar {display:block}
 nav {display: none; overflow: hidden;}
-nav ul li {background-color:#ffffff; border: 1cap solid #000000; text-decoration: none; padding: 5px; display: block; text-align: center;}
+nav ul li {background-color:#ffffff; border: 2px solid #000000; text-decoration: none; padding: 5px; display: block; text-align: center;}
 .logo {width: 200px;}
 img {width: 200px;}
 .imagenmodelo {width: 50%;}
@@ -41,3 +41,56 @@ nav ul li a { color:#050000; border: 1px solid #fff; text-decoration: none; padd
 
 
 .icono { font-size: 30px; color:#ffffff; position:absolute; right: 10px; }
+
+h1 { text-align:center; background-color: rgb(216, 216, 216); color: rgb(255, 255, 255)}
+
+.slides {display: flex;}
+
+.slider-container {
+  width: 100%;
+  max-width: 600px; /* Puedes ajustar el ancho según tu preferencia */
+  overflow: hidden; /* Esto asegura que solo una imagen sea visible a la vez */
+  margin: auto;
+  position: relative;}
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+    width: 100%; /
+}
+
+.slide {
+  min-width: 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: solid rgb(0, 0, 0);
+  border-width: 0 3px 3px 0;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+  transform: translateY(-50%); 
+}
+
+.next {
+  right: 10px;
+  transform: translateY(-50%); 
+}
+
+.prev:hover, .next:hover {
+  border-color: gray; 
+}
