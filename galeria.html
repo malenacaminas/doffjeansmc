@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Catálogo </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+   
+  <body>
+    <header>
+        <a href="#" onclick="MiFuncion()" class="icono" id="barra">
+        <i class="fa fa-bars" aria-hidden="true"> 
+        </i>
+        <a href="index.html"><img src="logodoff.jpeg" class="logo">
+        </a>
+        <nav id="navegador">
+           <ul>  
+              <li><a href="galeria.html">Catálogo</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
+     </header>
+   
+        <main>
+          <h1>Catálogo</h1>
+          <div class="cajacontenedora">
+            <div>
+              <h2>Jeans</h2>
+              <img src="PrendaJeans.jpg" class="FotoPrendaJeans">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div>
+              <h2>Polleras</h2>
+              <img src="PrendaPolleras.jpg" class="FotoPrendaPollera">
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div>
+              <h2>Camperas</h2>
+              <img src="PrendaCamperas.jpg" class="FotoPrendaCampera">
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+          </div>
+        </main>
+
+        <footer>
+            <p> Terminos y condiciones </p>
+        </footer>
+
+        <script>
+          function MiFuncion() {
+             // aquí se define el ID del elemento que va a tomar la clase
+           var x = document.getElementById("navegador");
+           if (x.className === " ") {
+               // esta es la clase que se agrega al elemento con eo id="navegador"
+             x.className += "mostrar";
+           } else {
+             x.className = " ";
+           }
+         }
+      </script>   
+        <script>
+          function MiFuncion() {
+             // aquí se define el ID del elemento que va a tomar la clase
+           var x = document.getElementById("navegador");
+           if (x.className === " ") {
+               // esta es la clase que se agrega al elemento con eo id="navegador"
+             x.className += "mostrar";
+           } else {
+             x.className = " ";
+           }
+         }
+      </script>   
+</html>

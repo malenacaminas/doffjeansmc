@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title> Contacto </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+   <body>
+    
+    <header>
+      <a href="#" onclick="MiFuncion()" id="barra">
+        <i class="fa fa-bars" aria-hidden="true" id="navegador">
+        </i> </a>
+      <a a href="index.html" ><img src="logodoff.jpeg" class="logo"></a>
+        <nav id="navegador">
+           <ul>
+               <li><a href="galeria.html">Catálogo</a></li>
+               <li><a href="contacto.html">Contacto</a></li>
+           </ul>
+        </nav>
+     </header>
+
+        <main>
+            <h1> Contacto </h1>
+            <img class="imagenmodelo" src="jean1.jpg" alt="modelo">
+        </main>
+
+        <footer>
+            <p> Terminos y condiciones </p>
+        </footer>
+        <script>
+          function MiFuncion() {
+             // aquí se define el ID del elemento que va a tomar la clase
+           var x = document.getElementById("navegador");
+           if (x.className === " ") {
+               // esta es la clase que se agrega al elemento con eo id="navegador"
+             x.className += "mostrar";
+           } else {
+             x.className = " ";
+           }
+         }
+      </script>   
+  </body>
+</html>
