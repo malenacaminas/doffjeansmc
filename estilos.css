@@ -42,55 +42,59 @@ nav ul li a { color:#050000; border: 1px solid #fff; text-decoration: none; padd
 
 .icono { font-size: 30px; color:#ffffff; position:absolute; right: 10px; }
 
-h1 { text-align:center; background-color: rgb(216, 216, 216); color: rgb(255, 255, 255)}
+h1 { text-align:center; background-color: rgb(216, 216, 216); color: rgb(80, 80, 80)}
 
 .slides {display: flex;}
 
 .slider-container {
   width: 100%;
-  max-width: 600px; /* Puedes ajustar el ancho según tu preferencia */
-  overflow: hidden; /* Esto asegura que solo una imagen sea visible a la vez */
+  max-width: 600px; 
+  overflow: hidden; 
   margin: auto;
   position: relative;}
 
-  .slides {
-    display: flex;
+  .slides {display: flex;
     transition: transform 0.5s ease-in-out; 
-    width: 100%; /
-}
+    width: 100%; /}
 
-.slide {
-  min-width: 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
-  box-sizing: border-box;
-}
+.slide {min-width: 100%; 
+  box-sizing: border-box;}
 
-.slide img {
-  width: 100%;
+.slide img {width: 100%;
   height: auto;
-  display: block;
-}
+  display: block;}
 
-.prev, .next {
-  position: absolute;
+.prev, .next {position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  border: solid rgb(0, 0, 0);
-  border-width: 0 3px 3px 0;
-  padding: 10px;
+  border: transparent;
+  border-width: 6px 6px ;
+  padding: 2px;
   cursor: pointer;
   z-index: 10;
-}
+  background-color: transparent; 
+  transform: rotate(135deg);}
 
-.prev {
-  left: 10px;
+.prev {left: 50px;
   transform: translateY(-50%); 
-}
+  color: #fff;}
 
-.next {
-  right: 10px;
+.next {right: 50px;
   transform: translateY(-50%); 
-}
+  color: #fff;}
 
-.prev:hover, .next:hover {
-  border-color: gray; 
-}
+.direccion {font-size: 20px; text-align: center; padding-bottom: 30px}
+.telefono {font-size: 20px; text-align: center; padding-top: 20px;}
+.wppcontacto {font-size: 20px; text-align: center;}
+
+form p { display: flex; padding-left: 10%;}
+.caja-form {width: 100%; display: flex; justify-content: center; margin: 2% 0 2% 0; align-items: center;}
+.caja-formulario { display: flex; padding: 15px; justify-content: center; align-items: center; }
+form strong { display: block; width: 100px; margin: 8px; color: rgb(83, 83, 83); font-size: 15px;}
+
+.respuesta { display: flex; flex-flow: wrap; width: 100%; margin: 5% 0 5% 0; justify-content: center;}
+.titulo-respuesta { width: 100%; display: flex; font-size: 80px; justify-content: center; margin-bottom: 20px; color: #050000;}
+.texto-respuesta {color: #424242; font-size: 15px;}
+
+.anuncio { margin: 3% 0 3% 0; display: flex; display: flex; justify-content: center;}
+.anuncio iframe { width: 728px; height: 90px;}
