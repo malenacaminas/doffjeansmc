@@ -17,12 +17,18 @@ header {align-items: flex-start; padding: 15px; background-color: black;}
 
 
 .mostrar {display:block}
-nav {display: none; overflow: hidden;}
-nav ul li {background-color:#ffffff; border: 2px solid #000000; text-decoration: none; padding: 5px; display: block; text-align: center;}
+nav {width: 100%; background-color: #ffffff;}
+nav ul li {flex: 1px; border:none ; text-align: center;}
+nav ul li a {display: block; padding: 15px 0; text-decoration: none; color: #000000;}
 .logo {width: 200px;}
 img {width: 200px;}
 .imagenmodelo {width: 50%;}
 .FotoBanner2 {width: 100%;}
+
+.navegador ul {list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: space-around;}
+.navegador li {display: inline-block;}
+.navegador a {text-decoration: none; color: rgb(0, 0, 0); padding: 10px 20px; font-size: 18px;}
+
 
 .FotoPrendaJeans {width: 200px; }
 .FotoPrendaCampera {width: 200px;}
@@ -63,3 +69,18 @@ form strong { display: block; width: 100px; margin: 8px; color: rgb(83, 83, 83);
 
 .anuncio { margin: 3% 0 3% 0; display: flex; display: flex; justify-content: center;}
 .anuncio iframe { width: 728px; height: 90px;}
+
+/* Celulares*/
+
+@media (max-width: 768px) { }
+
+.icono {display: none;}
+
+
+@media screen and (max-width: 768px) {
+  .icono { display: block; font-size: 24px; color: rgb(255, 255, 255); padding: 10px; cursor: pointer;}
+  .navegador ul {display: none; flex-direction: column; text-align: center;}
+  .navegador.mostrar ul {display: flex;}
+  .navegador li {width: 100%;}
+  .navegador a {display: block; padding: 15px;}
+}
