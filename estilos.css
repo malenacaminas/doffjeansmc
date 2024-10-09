@@ -70,6 +70,8 @@ form strong { display: block; width: 100px; margin: 8px; color: rgb(83, 83, 83);
 .anuncio { margin: 3% 0 3% 0; display: flex; display: flex; justify-content: center;}
 .anuncio iframe { width: 728px; height: 90px;}
 
+.mapa {width: 100%; max-width: 400px; align-items: center ;height: 300px; margin: 20px auto; display: block;}
+
 /* Celulares*/
 
 @media (max-width: 768px) { }
