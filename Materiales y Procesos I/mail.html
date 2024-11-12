@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail</title>
+</head>
+
+<style>
+    body {font-family: sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; text-align: center;}
+    .container {max-width: 600px; margin: auto; background-color: #000000; padding: 20px; color: #ffffff;}
+    .logo img {max-width: 200px; height: auto;}
+    .title {font-size: 24px; margin: 20px 0;}
+    .text {font-size: 16px; margin: 20px 0;}
+    .columns {display: flex; flex-wrap: wrap; justify-content: space-between; margin: 20px 0;}
+    .item {width: 100%; margin-bottom: 20px;}
+    .item img {width: 100%; height: auto; max-width: 260px; object-fit: cover;}
+    
+    @media (min-width: 600px) {.item {width: 48%;}}
+    .button {background-color: #ffffff; color: #686868; padding: 10px 20px; text-decoration: none;font-size: 16px; border-radius: 5px; display: inline-block; margin-top: 20px;}
+</style>
+
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="https://malenacaminas.github.io/doffjeansmc/index.html" target="_blank">
+                <img src="https://malenacaminas.github.io/doffjeansmc/logodoff.jpeg" alt="Logo">
+            </a>
+        </div>
+        <!-- Título -->
+        <div class="title">!!!Gran lanzamiento!!!</div>
+        <div class="text">Descubre lo último en moda con descuentos especiales.</div>
+        <!-- Columnas de productos -->
+        <div class="columns">
+            <div class="item">
+                <img src="https://malenacaminas.github.io/doffjeansmc/ShortNuevo.jpg" alt="PolleraNueva">
+                <p>SHORT TIRO BAJO ELI 02</p>
+            </div>
+            <div class="item">
+                <img src="https://malenacaminas.github.io/doffjeansmc/BermudaNueva.jpg" alt="BermudaNueva">
+                <p>BERMUDA TIRO BAJO ELI 03</p>
+            </div>
+        </div>
+        <!-- Mensaje y botón -->
+        <div class="text">Gracias por ser parte de nuestra comunidad. No te pierdas nuestras promociones exclusivas.</div>
+        <a href="https://malenacaminas.github.io/doffjeansmc/index.html" target="_blank" class="button">Visita nuestra tienda</a>
+    </div>
+</body>
+</html>
