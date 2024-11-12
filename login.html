@@ -30,27 +30,31 @@
     </nav>
  </header>
 
- <section>
-  <div class="caja-form">
-  <div class="caja-formulario">
-    <form method="get" action="respuesta.html">
-        <p> <strong> Nombre: </strong> <input type="text" name="nombre" required> </p>
-        <p> <strong> Email: </strong> <input type="email" name="email" required> </p>
-        <p> <strong>Teléfono: </strong> <input type="text" name="telefono" required minlength="10"> </p>
-        <p> <strong>Edad: </strong> <input type="number" name="edad" required> </p>
-        <p> <input type="submit" name="btenvio" value="Registrarme"> </p>
-    </form>
-</div>
-</div>
-
- </section>
+  <section>
+    <div class="caja-contenedora">
+      <div class="caja-form">
+        <div class="caja-formulario">
+          <form method="get" action="respuesta.html">
+            <p> <strong> Nombre: </strong> <input type="text" name="nombre" required> </p>
+            <p> <strong> Email: </strong> <input type="email" name="email" required> </p>
+            <p> <strong>Teléfono: </strong> <input type="text" name="telefono" required minlength="10"> </p>
+            <p> <strong>Edad: </strong> <input type="number" name="edad" required> </p>
+            <p> <input type="submit" name="btenvio" value="Registrarme"> </p>
+          </form>
+        </div>
+      </div>
+      <div class="sliderLogin">
+        <img src="ModeloDoff1.jpg" alt="Foto 1" class="slider-img">
+        <img src="ModeloDoff2.jpg" alt="Foto 2" class="slider-img" style="display:none;">
+        <img src="ModeloDoff3.jpg" alt="Foto 3" class="slider-img" style="display:none;">
+      </div>
+    </div>
+  </section>
+  
    
-
-      <footer>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-whatsapp" aria-hidden="true"></i> 
-          <p> Terminos y condiciones </p>
-      </footer>
+ <footer>
+  <p class="NombreFooter"> Malena Camiñas - Materiales y Procesos I</p>
+</footer>
 
       <script>
         function MiFuncion() {
@@ -63,6 +67,24 @@
            x.className = " ";
          }
        }
-    </script>   
+    </script> 
+    
+    <script>
+      // slider de fotos
+      let slideIndex = 0;
+      const slides = document.getElementsByClassName("slider-img");
+    
+      function showSlides() {
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1; }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Cambia cada 2 segundos
+      }
+    
+      showSlides();
+    </script>
 </body>
 </html>

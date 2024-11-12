@@ -12,7 +12,8 @@ body {
     color: #000000;
 }   
 
-footer {text-align: center; background-color: rgb(0, 0, 0); height: 50px; color: #fff;}
+footer {text-align: center; background-color: rgb(0, 0, 0); height: 50px; color: #fff; height: 80px;}
+.NombreFooter {font-size: 15px; padding: 35px;}
 header {align-items: flex-start; padding: 15px; background-color: black;}
 
 
@@ -52,10 +53,25 @@ h1 { text-align:center; background-color: rgb(216, 216, 216); color: rgb(80, 80,
 .telefono {font-size: 20px; text-align: center; padding-top: 20px;}
 .wppcontacto {font-size: 20px; text-align: center;}
 
-form p { display: flex; padding-left: 10%;}
-.caja-form {width: 100%; display: flex; justify-content: center; margin: 2% 0 2% 0; align-items: center;}
-.caja-formulario { display: flex; padding: 15px; justify-content: center; align-items: center; }
-form strong { display: block; width: 100px; margin: 8px; color: rgb(83, 83, 83); font-size: 15px;}
+/* Ajuste general para el contenedor principal */
+.caja-contenedora {display: flex; justify-content: center; align-items: center;
+  gap: 40px; padding: 20px;  margin: 0 auto; border: 1px solid #ddd;}
+
+/* Estilo para el formulario */
+.caja-form {display: flex; justify-content: center; align-items: center;}
+.caja-formulario {display: flex; flex-direction: column; padding: 20px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);}
+form p {display: flex; align-items: center; padding-left: 0; margin: 10px 0;}
+form strong {width: 120px; margin-right: 10px; color: rgb(83, 83, 83); font-size: 15px;}
+
+/* Estilo para el slider */
+.sliderLogin {width: 400px; height: 350px; position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);}
+.slider-img {width: 100%; height: 100%; position: absolute; transition: opacity 1s ease;}
+
+/* Botón de envío del formulario */
+form input[type="submit"] {padding: 10px 20px; font-size: 16px; color: #fff; background-color: #333; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;}
+
+form input[type="submit"]:hover {background-color: #555;}
+
 
 .respuesta { display: flex; flex-flow: wrap; width: 100%; margin: 5% 0 5% 0; justify-content: center;}
 .titulo-respuesta { width: 100%; display: flex; font-size: 80px; justify-content: center; margin-bottom: 20px; color: #050000;}
@@ -69,13 +85,13 @@ form strong { display: block; width: 100px; margin: 8px; color: rgb(83, 83, 83);
 .GaleriaNewIn {display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; max-width: 1400px; margin: 0 auto; margin: 2%;}
 
 /* redes sociales */
-.logo-social-section {background-color: white; justify-content: center; margin: 2%; width: 200px; height: 100px;}
-.H1logo-social-section {background-color: white; justify-content: center;color: #000;}
-.social-media {text-align: right; margin: 0%;;}
+.logo-social-section {justify-content: left; margin: 0%; width: 200px; height: 100px;}
+.H1logo-social-section {justify-content: left;color: #000;}
+.social-media {text-align: left; margin: 0%;;}
 .social-media h2 {font-size: 24px; font-weight: bold;}
 .icons {display: flex; gap: 15px; margin-top: 10px; justify-content: center;}
-.icons a {font-size: 30px; /* Ajusta el tamaño de los íconos */ color: #000; /* Puedes cambiar el color si lo deseas */ text-decoration: none;}
-.icons a:hover {color: #6e6e6e; /* Cambia el color al pasar el mouse si lo prefieres */}
+.icons a {font-size: 40px; color: #000; text-decoration: none;}
+.icons a:hover {color: #6e6e6e;}
 
 
 
